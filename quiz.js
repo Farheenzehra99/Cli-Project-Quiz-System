@@ -15,7 +15,7 @@ let startQuiz = async () => {
         name: "fname",
         message: "What is Your Name?"
     });
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i < 6; i++) {
         let answers = [...data[i].incorrect_answers, data[i].correct_answer];
         let ans = await inquirer.prompt({
             type: "list",
